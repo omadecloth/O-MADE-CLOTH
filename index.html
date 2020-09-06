@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>O MADE CLOTH</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		var todayDate;
+		function getTodayDate()
+		{
+			todayDate=new Date();
+			document.getElementById("today").value=todayDate;
+		}
+		function getTomorrowDate()
+		{
+			const today =new Date();
+			const tomorrow=new Date(today);
+			tomorrow.setDate(tomorrow.getDate() +1);
+			document.getElementById("tomorrow").value=tomorrow;
+
+		}
+	</script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+	
+</div>
+	<div id="booking" class="section">
+		
+		<div class="section-center">
+		
+			<div class="container">
+					
+				<div class="row">
+						
+					<div class="booking-form">
+							<div>
+									<center><h1>O MADE CLOTH</h1>		</center>
+						<form id="submit-form" action="" method="">
+							<div class="form-group">
+								<div class="form-checkbox">
+									<span style="color: aqua;">BOOK ON:
+									<label for="today">
+										<input type="radio" id="today" name="book date" value="today"
+										onclick="getTodayDate()"
+										>
+										<span></span>Today
+									</label>
+									<label for="tomorrow">
+										<input type="radio" id="tomorrow" name="book date" value="tomorrow"
+										onclick="getTomorrowDate()">
+										<span></span>Tommorrow
+									</label>
+									</span>
+								
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<!-- <span class="form-label">Flying from</span> -->
+										<input class="form-control" type="text" placeholder="Enter your full name"
+										name="full name" id="name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<!-- <span class="form-label">Flyning to</span> -->
+										<input class="form-control" type="number"  name="phone number"
+										placeholder="Enter your mobile number">
+									</div>
+								</div>
+							</div>
+							 <div class="row">
+								<div class="col-md-6">
+									
+									<div class="form-group">
+										<span class="form-label" style="font-family: cursive;font-style: normal;font-size: large;color: mediumspringgreen;">Select items:</span>
+										<span class="form-label">Gown<input type="checkbox" id="gown" name="item"
+											value="gown" style="margin: 5px;"></span>
+											<label class="options">Aline Gown
+												<input type="checkbox" id="aline-gown" name="item"
+												value="Aline gown">
+												</label>
+										<label class="options">Umbrella Gown
+										<input type="checkbox" id="umbrella-gown" name="item"
+										value="umbrella gown">
+										</label>
+							
+										<label class="options">Gathering Gown
+										<input type="checkbox" id="gathering-gown" name="item"
+										value="Gathering gown">
+										</label>
+										<label class="options">Box Pleated Gown
+											<input type="checkbox" id="box pleated gown" name="item"
+											value="box pleated gown">
+											</label>
+
+											<label class="options">Pannal cut gown
+												<input type="checkbox" id="pannel-cut-gown" name="item"
+												value="pannal cut gown">
+												</label>	
+
+										<label class="options">Ball gown
+										<input type="checkbox" id="ball-gown" name="item"
+										value="Ball gown">
+										</label>
+										<label class="options">Wedding gown
+											<input type="checkbox" id="wedding-gown" name="item"
+											value="Wedding gown">
+											</label>
+										
+	
+
+										<span class="form-label">Lehangha set</span>
+										<label class="options"> Skrit
+										<input type="checkbox" id="skirt" name="item"
+										value="skrit">
+										</label>
+							
+										<label class="options">Top
+										<input type="checkbox" id="Top" name="item"
+										value="Top">
+										</label>
+
+										<label class="options">Umbrella Skrit
+										<input type="checkbox" id="umbrella skrit" name="item"
+										value="umbrella skrit">
+										</label>
+
+										<label class="options">Pannal Skrit
+										<input type="checkbox" id="pannal skirt" name="item"
+										value="pannal skrit">
+										</label>
+
+										<label class="options">Gathering Skrit
+										<input type="checkbox" id="gathering skirt" name="item"
+										value="gathering skirt">
+										</label>
+
+										<label class="options">Box Pleated Skrit
+										<input type="checkbox" id="box pleated skrit" name="item"
+										value="box pleated skirt">
+										</label>
+
+
+										<span class="form-label">Churidar Set</span>
+
+
+										<label class="options"> Top
+											<input type="checkbox" id="top" name="item"
+											value="top">
+											</label>
+											<label class="options"> Dupatta
+												<input type="checkbox" id="dupatta" name="item"
+												value="dupatta">
+												</label>
+								
+										<label class="options"> Normal Pant
+										<input type="checkbox" id="normal pant" name="item"
+										value="normal pant">
+										</label>
+							
+										<label class="options">Chudi Pant
+										<input type="checkbox" id="chudi pant" name="item"
+										value="chudi pant">
+										</label>
+
+										<label class="options">Pencil Pant
+										<input type="checkbox" id="pencil pant" name="item"
+										value="pencil pant">
+										</label>
+
+										<label class="options">Parallel Pant
+										<input type="checkbox" id="parallell pant" name="item"
+										value="parallell pant">
+										</label>
+
+										<label class="options">Plazo
+										<input type="checkbox" id="plazo" name="item"
+										value="plazo">
+										</label>
+
+										<label class="options">Patiyala
+										<input type="checkbox" id="patiyala" name="item"
+										value="patiyala">
+										</label>
+
+										
+										<label class="options">Garara
+											<input type="checkbox" id="garara" name="item"
+											value="garara">
+											</label>
+										
+									
+										</div>
+										<input type="radio" id="9am" name="timeslot" 
+										value="9AM">
+										<label for="9am">9 AM</label>
+
+										<input type="radio" id="10am" name="timeslot" 
+										value="10AM">
+										<label for="10am">10 AM</label>
+
+										<input type="radio" id="11am" name="timeslot" 
+										value="11AM">
+										<label for="11am">11 AM</label>
+
+										<input type="radio" id="12am" name="timeslot" 
+										value="12AM">
+										<label for="12am">12 AM</label>
+
+										<input type="radio" id="1pm" name="timeslot" 
+										value="1PM">
+										<label for="1pm">1 PM</label>
+
+										<input type="radio" id="2pm" name="timeslot" 
+										value="2PM">
+										<label for="2pm">2 PM</label>
+
+										<input type="radio" id="3pm" name="timeslot" 
+										value="3PM">
+										<label for="3pm">3 PM</label>
+
+										<input type="radio" id="4pm" name="timeslot" 
+										value="4PM">
+										<label for="4pm">4 PM</label>
+										
+										
+									</div>
+								</div>
+								
+								<!--<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Returning</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Adults (18+)</span>
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Children (0-17)</span>
+										<select class="form-control">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Travel class</span>
+										<select class="form-control">
+											<option>Economy class</option>
+											<option>Business class</option>
+											<option>First class</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-3"> -->
+									<div class="form-btn">
+										<button class="submit-btn">Book</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwPoH-wAYHMD0sZl5ZU7T0HBZruQEDkpL_sSp3e/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    // alert("Form submitted successfully")
+                    // window.location.reload()
+                    window.location.href="response.html" // make something message.
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
