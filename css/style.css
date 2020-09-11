@@ -23,7 +23,7 @@
 
 .booking-form {
 	background: rgba(0, 0, 0, 0.7);
-	padding: 30px;
+	padding: 40px;
 	border-radius: 6px;
 }
 
@@ -208,3 +208,24 @@ input[type=radio]:checked + label {
 	  COLOR: WHITE;
 	  /* padding: 5px; */
 	 }
+	 .toDesigner
+	 {
+		 margin:15px;
+		 color: black;
+		 opacity: 50%;
+	 }
+	.apply-btn{
+	color: #fff;
+	margin: 5px;
+	float:right;
+	background-color:blueviolet ;
+	font-weight: 400;
+	height: 50px;
+	font-size: 14px;
+	border: none;
+	width: 50%;
+	border-radius: 40px;
+	text-transform: uppercase;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+	}
