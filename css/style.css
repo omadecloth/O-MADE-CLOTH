@@ -210,7 +210,7 @@ input[type=radio]:checked + label {
 	 }
 	 .toDesigner
 	 {
-		 margin:15px;
+		 margin:10px;
 		 color: black;
 		 opacity: 50%;
 	 }
